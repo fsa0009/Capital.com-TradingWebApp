@@ -1,13 +1,14 @@
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    <img src="https://capital.com/img/logobig.png" alt="HTML5 Icon" width="200" height="50">
-
-   
+<nav class="navbar navbar-expand-lg navbar-light bg-light " > 
+  
+    
+  <img class = "ms-3" src="https://upload.wikimedia.org/wikipedia/commons/1/18/Capital.com_logo.png " alt="HTML5 Icon" width="150" height="30">
+  
 
     
     
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        <ul class="navbar-nav"><div class="mx-auto" style="width: 200px;"></div>
           <li class="nav-item active ">
             <a class="nav-link" href="#">Markets <span class="sr-only"></span></a>
           </li>
@@ -26,148 +27,89 @@
           <li class="nav-item">
             <a class="nav-link" href="#">White Paper</a>
           </li>
+
+          
+          <div class="btn-group dropstart">
+            <button type="button" class="btn " data-bs-toggle="dropdown" aria-expanded="false">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-search  mx-3 my-2" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </li>
+            </button>
+            
+            <ul class="dropdown-menu" >
+              <div class="input-group">
+                <div class="form-outline" >
+                  <input id="search-focus" type="search" id="form1" class="form-control"  />
+                  <label class="form-label" for="form1">Search</label>
+                </div>
+                <button type="button" class="btn btn-primary" >
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </ul>
+           
+          </div>
+
+
+
+         
+
+
+
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown link
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+
+            
+
+            <div class="dropdown ">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Language
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <ul class="nav justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">English</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Arabic</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Spanish</a>
+                  </li>
+                  
+                </ul>
+                <li><a class="dropdown-item" href="#">Italian</a></li>
+                <li><a class="dropdown-item" href="#">Persian</a></li>
+              </ul>
+              
+              
+
             </div>
-            
+
           </li>
-
-          <ul> <form class="d-flex c">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success center" type="submit">Search</button>
-            </form>
+          
+        
         </ul>
-         
-            
-        </ul>
-      </div>
-    </nav> 
 
-  
-    <!-- Footer -->
-<footer class="page-footer font-small indigo bg-black fixed-bottom ">
 
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left">
-  
-      <!-- Grid row -->
-      <div class="row">
-  
-        <!-- Grid column -->
-        <div class="col-md-3 mx-auto">
-  
-          <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white ">Markets</h5>
-  
-          <ul class="list-unstyled ">
-            <li>
-                <a href="#!" class="link-light">Indices</a>
-            
-            </li>
-            <li>
-              <a href="#!" class="link-light">Forex</a>
-            </li>
-            <li>
-              <a href="#!" class="link-light">Commodities</a>
-            </li>
-            <li>
-              <a href="#!" class="link-light">Cryptocurrencies</a>
-            </li>
-            <li>
-                <a href="#!" class="link-light">Shares</a>
-              </li>
-          </ul>
-  
+
+        
+          <div class="mx-right" style="width: 100px;"></div>
+          <a href="C:\Users\faamr\OneDrive\Documents\GitHub\WVU_CS230\capital\src\app\login" class="btn btn-info btn-light" role="button">
+            Log In
+          </a>
+          <button type="button" class="btn btn-warning ">Trade Now</button>
         </div>
-        <!-- Grid column -->
+      </nav> 
   
-        <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
-        <div class="col-md-3 mx-auto">
-  
-          <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white">Products</h5>
-  
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!" class="link-light">Products</a>
-            </li>
-            <li>
-              <a href="#!" class="link-light">Platforms</a>
-            </li>
-            <li>
-              <a href="#!" class="link-light">Education</a>
-            </li>
-           
-          </ul>
-  
-        </div>
-        <!-- Grid column -->
-  
-        <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
-        <div class="col-md-3 mx-auto">
-  
-          <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white">For traders</h5>
-  
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!" class="link-light">MArket Updates</a>
-            </li>
-            <li>
-              <a href="#!" class="link-light">Specials</a>
-            </li>
-         
-          </ul>
-  
-        </div>
-        <!-- Grid column -->
-  
-        <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
-        <div class="col-md-3 mx-auto">
-  
-          <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white">Learn to trade</h5>
-  
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!" class="link-light">The basics of trading</a>
-            </li>
-            <li>
-              <a href="#!" class="link-light">Popular markets giude</a>
-            </li>
-            <li>
-              <a href="#!" class="link-light">Trading giuds</a>
-            </li>
-           
-          </ul>
-  
-        </div>
-        <!-- Grid column -->
-  
-      </div>
-      <!-- Grid row -->
-  
-    </div>
+      
+      
+        
+   
     
-    <!-- Footer Links -->
+    
+       
+    
   
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/"> </a>
-    </div>
-    <!-- Copyright -->
   
-  </footer>
-  <!-- Footer -->
