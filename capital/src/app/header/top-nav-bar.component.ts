@@ -5,7 +5,9 @@ import { Component } from '@angular/core';
     styleUrls: ['top-nav-bar.component.css']
 })
 export class TopNavBarComponent {
-
+Markets: string  ="Markets"
+Products : string = "Products"
+ForTraders : string = "For traders"
 }
 
  

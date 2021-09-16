@@ -5,5 +5,8 @@ import { Component } from '@angular/core';
     
 })
 export class loginComponent {
+    or : string = "Or"
+    Email : string = "Email address"
+    Password : string = "Password"
 
 }
