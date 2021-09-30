@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { cards } from './cards.model';
+import { mock_cards } from './mock-cards';
 
 @Component({
   selector: 'newpages-markets',
@@ -6,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MarketsComponent implements OnInit {
 
-  constructor() { }
+  
+  cards: cards [] = [] ;
 
   ngOnInit(): void {
+    for (var card of mock_cards){
+      this.cards.push(new cards(card))
+    }
   }
 
+  
 }

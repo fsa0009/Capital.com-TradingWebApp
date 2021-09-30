@@ -15,6 +15,7 @@ import { FortradersComponent } from './newPages/fortraders.component';
 import { LearntotradeComponent } from './newPages/learntotrade.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './newPages/about.component';
+import { CardsComponent } from './newPages/cards.component';
 import { LayoutNewpagesComponent } from './layout/layout-newpages.component';
 import { HomeMainComponent } from './home/home-main.component';
 @NgModule({
@@ -33,7 +34,8 @@ import { HomeMainComponent } from './home/home-main.component';
     LearntotradeComponent,
     AboutComponent,
     LayoutNewpagesComponent,
-    HomeMainComponent
+    HomeMainComponent,
+    CardsComponent
 
   ],
   imports: [
