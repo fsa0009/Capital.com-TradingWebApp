@@ -1,0 +1,27 @@
+<p *ngIf="myInfo == undefined">Failed fetching info from remote server </p>
+<div *ngIf="myInfo != undefined">
+    <div class="container-fluid">
+        <div class= "d-flex flex-row justify-content-between">
+            <div class="flex-column">
+   
+                User: {{myInfo.FirstName}} {{myInfo.LastName}}
+
+            </div>
+            <div class="flex-column">
+   
+                Email: {{myInfo.Mix_ID}}@mix.wvu.edu
+
+            </div>
+            <div class="flex-column">
+   
+                GitHub: <a href={{myInfo.GitHub}}>{{myInfo.GitHub}}</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+

@@ -18,6 +18,8 @@ import { AboutComponent } from './newPages/about.component';
 import { CardsComponent } from './newPages/cards.component';
 import { LayoutNewpagesComponent } from './layout/layout-newpages.component';
 import { HomeMainComponent } from './home/home-main.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './header/user-info.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,12 +37,14 @@ import { HomeMainComponent } from './home/home-main.component';
     AboutComponent,
     LayoutNewpagesComponent,
     HomeMainComponent,
-    CardsComponent
+    CardsComponent, 
+    UserInfoComponent
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
