@@ -20,6 +20,7 @@ import { LayoutNewpagesComponent } from './layout/layout-newpages.component';
 import { HomeMainComponent } from './home/home-main.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './header/user-info.component';
+import { SignupComponent } from './sign up/signup.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +39,8 @@ import { UserInfoComponent } from './header/user-info.component';
     LayoutNewpagesComponent,
     HomeMainComponent,
     CardsComponent, 
-    UserInfoComponent
+    UserInfoComponent,
+    SignupComponent
 
   ],
   imports: [
