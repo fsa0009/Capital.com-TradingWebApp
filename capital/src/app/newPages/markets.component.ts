@@ -26,6 +26,15 @@ export class MarketsComponent implements OnInit {
        console.log(data[item]);
         this.cards.push( new cards (data[item]));
       }
+      
+
+      
+      // this.UserInfoService.addCard().subscribe(data => {
+      //   console.log(data );
+      // });
+
+
+      
     })
     /*
     // getting the list of cards from the mock_cards.ts 
@@ -35,6 +44,9 @@ export class MarketsComponent implements OnInit {
     }
     */
   }
+  
+
+
   
 
   

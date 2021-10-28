@@ -1,0 +1,83 @@
+<!-- Button trigger modal -->
+
+<button type="button " class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signupmodal">
+    <div class="text">Trade now</div>
+  </button>
+
+  
+   <!-- Modal -->
+   <div class="modal fade" id="signupmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" width="300px">
+    <div class="modal-dialog " style="background-color: rgb(229, 229, 226);">
+      <div class="modal-content">
+        <div class = "container-fluid">
+            <div class="row">
+      
+
+    <div class = "col">
+    
+
+      <div class="modal-body " >
+        <h3>
+          Add a card
+         
+         </h3>
+        <form #postForm="ngForm" (ngSubmit)="onAddCard(postForm.value)">
+            <div class="mb-3 my-4">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" ngModel name="imagePath">
+                <label for="floatingInput">
+                  
+                  Image Path
+                </label>
+              </div>
+              
+            </div>
+            
+            <div class="mb-3 my-1">
+              <div class="form-floating">
+                <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com"ngModel name="num">
+                <label for="floatingInput">
+                  
+                  Number
+                </label>
+              </div>
+            </div>
+            <div class="mb-3 my-1">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com"ngModel name="title">
+                <label for="floatingInput">
+                  
+                  Title
+                </label>
+              </div>
+            </div>
+           
+            <div class="d-grid gap-2">
+                <button class="btn btn-warning" type="submit">Create Card</button>
+                
+              </div>
+
+             
+
+              <div >
+
+   
+              </div>
+
+          </form>
+    </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
