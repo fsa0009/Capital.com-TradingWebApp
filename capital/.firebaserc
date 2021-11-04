@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "capital-app-24e9a": {
+      "hosting": {
+        "capital": [
+          "capital-app-24e9a"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "capital-app-24e9a"
+  }
+}

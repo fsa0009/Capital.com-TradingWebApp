@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { cards } from './cards.model';
+import { DatabaseService } from './database.service';
 import { mock_cards } from './mock-cards';
 import { UserInfoService } from './user-info.service';
 
@@ -12,8 +13,9 @@ export class MarketsComponent implements OnInit {
   
   cards: cards [] = [] ;
 
-  constructor(private UserInfoService : UserInfoService){
+  constructor(private UserInfoService : UserInfoService , private dbService:DatabaseService){
 
+    dbService.showData();
 
   }
 

@@ -94,19 +94,28 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets", 
+              "src/assets",
               {
                 "glob": "bootstrap-icons.svg",
-                "input" : "./node_modules/bootstrap-icons/",
+                "input": "./node_modules/bootstrap-icons/",
                 "output": "/"
-
               }
             ],
             "styles": [
-              "src/styles.css", 
+              "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "capital:build:production",
+            "firebaseProject": "capital-app-24e9a",
+            "firebaseHostingSite": "capital-app-24e9a"
           }
         }
       }
