@@ -1,0 +1,36 @@
+<div class="row">
+    
+    <div class = "col-8 mx-auto mb-3">
+        <form #authForm="ngForm" (ngSumbit)="onSubmit(authForm)">
+        <div class="input-group my-3">
+            <span class="input-group-text" >Email:</span>
+            <input type="text" class="form-control" 
+            placeholder="Email"
+            ngModel name="email"
+            required
+            email >
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" >Password:</span>
+            <input type="password" class="form-control" 
+            placeholder="Passowrd"
+            ngModel name="Passowrd"
+            required
+            password
+            minlength="8">
+          </div>
+          <form #authForm="ngForm" (ngSumbit)="onSubmit(authForm)">
+          <button type="submit" class="btn btn-warning me-3" [disabled]="!authForm.valid" (click)="buttonClicked='login'" >
+              Login
+            </button>
+          <button   class="btn btn-warning mw-3" type="submit" [disabled]="!authForm.valid" (click)="buttonClicked='SignUp'">
+              Sign Up
+            </button>
+            </form>
+        </form>
+    </div>
+</div>
+
+
+
+

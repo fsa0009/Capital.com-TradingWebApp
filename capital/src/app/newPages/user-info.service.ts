@@ -18,7 +18,7 @@ getCards(){
    return this.http.get<cards[]>(this.baseURL + this.endPoint);
 }
 
-
+/*
 modifyCardsInfo(){
     var temp: cards = {
         imagePath : "Jack",
@@ -27,8 +27,9 @@ modifyCardsInfo(){
     }
     return this.http.put(this.baseURL + this.endPoint , temp)
 }
+*/
 addCard(data: cards) {
-    return this.http.post(this.baseURL + this.endPoint,data);
+    return this.http.post(this.baseURL + this.endPoint, data);
 }
 
 
