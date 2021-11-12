@@ -1,48 +1,37 @@
-<div class="row">
-    <div class="col-8 mw-auto">
+<div class="row my-2">
+    <div class="col-8 mx-auto">
     <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
         <div class="row">
-      
-       
-        
-        <div class="row mt-3">
-            <div class="col-4">
+        <div class="row ">
                 <div class="form-floating ">
                     <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"ngModel name="email" required email>
-                    <label for="floatingInput"class="text-secondary">Email</label>
+                    <label for="floatingInput"class="text-dark"> Email</label>
                   </div>
-            </div>
-            </div>
-    
-            <div class="row mt-3">
-                <div class="col-4">
-                    <div class="form-floating ">
-                        <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com"ngModel name="password" required password minlength="5">
-                        <label for="floatingInput"class="text-secondary">Password</label>
-                      </div>
-                </div>
-                </div>
-    
-               
-    
-                <div class="row ">
-                <div class="col-4 mt-3">
-                    <div class="d-grid gap-2 col-12 mx-auto">
-                        
-                        <button class="btn btn-warning btn-lg" type="submit" [disabled]="!authForm.valid"(click)="buttonClicked='SignUp'">SignUp</button>
-                      </div>
-                </div>
-                <div class="col-4 mt-3">
-                    <div class="d-grid gap-2 col-12 mx-auto">
-                        
-                        <button class="btn btn-warning btn-lg" type="submit" [disabled]="!authForm.valid"(click)="buttonClicked='Login'">login</button>
-                      </div>
-                </div>
-        </div>
-    
-        <div class="col text-center">
            
+            </div>
+    
+            <div class="row my-2">
+                    <div class="form-floating  ">
+                        
+                        <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com"
+                        ngModel name="password" required password minlength="8">
+                        <label for="floatingInput"class="text-dark">  Password</label>
+                      </div>
+                </div>
+  
+                <div class="row my-2">
+                <div class="col  my-3">
+                        <button type="submit" class="btn btn-warning me-3" [disabled]="!authForm.valid"(click)="buttonClicked='login'" >
+                            Login
+                          </button>
+                        <button   class="btn btn-warning mw-3" type="submit" [disabled]="!authForm.valid"(click)="buttonClicked='SignUp'">
+                            Sign Up
+                          </button>
+
+                </div>
         </div>
+    
+        
     
     </div>
     </form>
